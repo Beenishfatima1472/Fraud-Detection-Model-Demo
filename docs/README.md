@@ -9,44 +9,7 @@
 
 ---
 
-## Overview
-
-A complete, runnable monitoring pipeline demonstrating how production fraud detection models fail silently — and how to detect, measure, and partially recover from that failure without retraining.
-
-This repository accompanies published research on lightweight model monitoring frameworks for production fraud systems. The notebook uses **synthetic data only**. No proprietary datasets or internal systems are referenced.
-
 ---
-
-## The problem this solves
-
-Most fraud detection models are deployed and then left unmonitored. Infrastructure metrics stay green while model recall quietly collapses as data distributions shift and fraud patterns evolve. This is known as **silent model failure** — and it is the most common, least monitored failure mode in production fintech systems.
-
----
-
-## What the notebook demonstrates
-
-| Section | Content |
-|---|---|
-| Data generation | Synthetic credit card fraud dataset · 0.17% fraud rate · realistic class imbalance |
-| Baseline training | Logistic Regression and XGBoost trained on Period 0 |
-| Drift simulation | 5 production periods with increasing data and concept drift |
-| Drift detection | Population Stability Index (PSI) + Kolmogorov-Smirnov test |
-| Performance monitoring | Recall, AUC, FPR tracking across periods |
-| Threshold optimization | Cost-sensitive recovery without retraining |
-| Experiment tracking | MLflow logging for all metrics and alert levels |
-
----
-
-## Key results
-
-```
-Period 0  →  Recall: 84%   PSI: stable
-Period 1-4 →  Recall:  0%   PSI: 0.67–0.75 (CRITICAL)
-Period 5  →  Recall: 33%   after threshold optimization, no retraining
-```
-
-Drift was detectable **1–2 periods before** performance collapse.
-Threshold optimization recovered **33% of fraud recall** with no model changes.
 
 ---
 
@@ -84,15 +47,6 @@ mlflow ui
 
 ---
 
-## File structure
-
-```
-├── fraud_model_drift_demo.ipynb   # Main notebook
-├── outputs/                       # Generated charts saved here
-│   ├── psi_heatmap.png
-│   └── silent_failure.png
-├── requirements.txt
-└── README.md
 ```
 
 ---
