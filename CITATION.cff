@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this framework in research or production, please cite as below."
+type: software
+title: "Lightweight Model Monitoring Framework for Production Fraud Detection"
+authors:
+  - family-names: Fatima
+    given-names: Syeda Beenish
+    email: syedabeenishf.14@gmail.com
+    orcid: ""
+    affiliation: "MaqasidAI · Superior University Lahore"
+repository-code: "https://github.com/Beenishfatima1472/fraud-model-drift-demo"
+url: "https://maqasidai.org/mlops-audit"
+license: Apache-2.0
+version: "1.0.0"
+date-released: "2025-01-01"
+keywords:
+  - mlops
+  - model monitoring
+  - drift detection
+  - fraud detection
+  - population stability index
+  - machine learning
+  - fintech
+  - production ml
+preferred-citation:
+  type: article
+  title: "Lightweight Model Monitoring Framework for Production Fraud Detection Systems"
+  authors:
+    - family-names: Fatima
+      given-names: Syeda Beenish
+  journal: "Wiley Journal"
+  year: 2025
+  notes: "Under review"
