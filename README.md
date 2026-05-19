@@ -228,8 +228,15 @@ If you use this framework in research or production, please cite:
 }
 ```
 
+#Contact
+
+**GitHub:** https://github.com/Beenishfatima1472
+LinkedIn: https://www.linkedin.com/in/syeda-beenish-fatima-395bb2263/
+
 ---
 
+
+---
 ## License
 
 Apache 2.0 — open for academic and commercial use with attribution.
